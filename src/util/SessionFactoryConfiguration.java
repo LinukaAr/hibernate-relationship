@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import entity.StudentEntity;
+//import entity.StudentEntity;
 
 public class SessionFactoryConfiguration {
 
@@ -13,8 +13,8 @@ public class SessionFactoryConfiguration {
     private SessionFactory sessionFactory;
 
     private SessionFactoryConfiguration() {
-        Configuration configuration = new Configuration().configure()
-                .addAnnotatedClass(StudentEntity.class);
+        Configuration configuration = new Configuration().configure();
+              //  .addAnnotatedClass(StudentEntity.class);
 
         sessionFactory = configuration.buildSessionFactory();
     }
